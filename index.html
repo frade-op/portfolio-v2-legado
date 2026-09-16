@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe's portfolio</title>
+    <meta name="description" content="Portfólio de Felipe Pereira, desenvolvedor de software com experiência em front-end, PHP e JavaScript.">
+    <meta name="theme-color" content="#00bce2">
+    <title>Felipe Pereira | Desenvolvedor de software</title>
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bg.css">
@@ -25,32 +27,34 @@
 </head>
 <body>
     <header>
-        <ul id="menu">
-            <li id="item-home" data-link="main" data-ancora="third" 
+        <nav aria-label="Navegação principal">
+            <ul id="menu">
+                <li>
+                    <button type="button" id="item-home" data-link="main" data-ancora="third"
                 data-pt="Inicial"
                 data-en="Home"
                 class="ffc"
-            >
-                Home
-            </li>
-            <li id="item-about" data-link="third" data-ancora="second" 
+                    >Home</button>
+                </li>
+                <li>
+                    <button type="button" id="item-about" data-link="third" data-ancora="second"
                 data-pt="Sobre"
                 data-en="About"
                 class="ffc"
-            >
-                About
-            </li>
-            <li id="item-developer" data-link="second" data-ancora="main" 
+                    >About</button>
+                </li>
+                <li>
+                    <button type="button" id="item-developer" data-link="second" data-ancora="main"
                 data-pt="Desenvolvedor"
                 data-en="Developer"
                 class="ffc"
-            >
-                Developer
-            </li>
-        </ul>
+                    >Developer</button>
+                </li>
+            </ul>
+        </nav>
         <ul>
-            <li id="pt-br" class="ffc">PT-BR</li>
-            <li id="en-us" class="active ffc">EN-US</li>
+            <li><button type="button" id="pt-br" class="ffc active" aria-label="Mudar idioma para português">PT-BR</button></li>
+            <li><button type="button" id="en-us" class="ffc" aria-label="Change language to English">EN-US</button></li>
         </ul>
     </header>
     <main>
@@ -95,7 +99,7 @@
                             class="ffc">
                             About my carrer
                             <span>
-                                <img src="assets/icons/plus-solid.svg" alt="Plus">
+                                <img src="assets/icons/plus-solid.svg" alt="" aria-hidden="true">
                             </span>
                         </h1>
                         <p id="stage-text" data-pt="
@@ -109,43 +113,39 @@
                             Click on the items below to learn more.
                         </p>
                         <ul>
-                            <li class="stages" id="stage-intern" data-stage="intern" 
+                                <li><button type="button" class="stages" id="stage-intern" data-stage="intern"
                                 data-pt="Estagiario +"
                                 data-en="Intern +"
                                 >
                                 Intern +
-                            </li>
-                            <li class="stages" id="stage-junior" data-stage="junior" 
+                                </button></li>
+                            <li><button type="button" class="stages" id="stage-junior" data-stage="junior"
                                 data-pt="Júnior +"
                                 data-en="Junior +"
                                 >
                                 Junior +
-                            </li>
-                            <li class="stages" id="stage-full" data-stage="full" 
+                                </button></li>
+                            <li><button type="button" class="stages" id="stage-full" data-stage="full"
                                 data-pt="Pleno +"
                                 data-en="Full +"
                                 >
                                 Full +
-                            </li>
+                                </button></li>
                         </ul>
                     </div>
                     <div class="content-box content-box-2">
                         <h1 data-pt="Sobre mim" data-en="About me" class="ffc">
                             About me
                             <span>
-                                <img src="assets/icons/plus-solid.svg" alt="Plus">
+                                <img src="assets/icons/plus-solid.svg" alt="" aria-hidden="true">
                             </span>
                         </h1>
                         <ul>
-                            <strong>
-                                <p>
-                                    <li 
-                                        data-pt="Atualmente estou à procura de trabalhos freelancers;" 
-                                        data-en="I am currently looking for freelance jobs;">
-                                        I am currently looking for freelance jobs;
-                                    </li>
-                                </p>
-                            </strong>
+                            <li>
+                                <strong data-pt="Atualmente estou à procura de trabalhos freelancers;" data-en="I am currently looking for freelance jobs;">
+                                    I am currently looking for freelance jobs;
+                                </strong>
+                            </li>
                             <li 
                                 data-pt="Sou uma pessoa criativa e esforçada;" 
                                 data-en="I am a creative and hardworking person;">
@@ -193,11 +193,14 @@
                     </h1>
                     <div class="exp">
                         <table id="table-exp">
+                            <caption class="sr-only">Tecnologias e ferramentas conhecidas</caption>
                             <thead>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <tr>
+                                    <th scope="col">Tecnologia</th>
+                                    <th scope="col">Tecnologia</th>
+                                    <th scope="col">Tecnologia</th>
+                                    <th scope="col">Tecnologia</th>
+                                </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
@@ -206,37 +209,30 @@
             </div>
             <div class="footer-section" id="footerSecond"></div>
         </section>
-        <!-- <section class="fsc" id="fourth" data-ancora="main">
-            <div class="bg bg-fourth"></div>
-            <div class="content">
-                <div class="wrap">
-                </div>
-            </div>
-        </section> -->
     </main>
     <footer>
         <div class="all-links">
             <div class="links" id="links" alt="Links de redes sociais">
                 <img src="assets/icons/link-solid.svg">
             </div>
-            <a target="_blank" alt="Link do linkedin" href="https://www.linkedin.com/in/felipe-frade-30a743165/">
+            <a target="_blank" alt="Link do linkedin" href="https://www.linkedin.com/in/frade-op/">
                 <div class="links">
-                    <img src="assets/icons/linkedin.svg">
+                    <img src="assets/icons/linkedin.svg" alt="">
                 </div>
             </a>
-            <a target="_blank" alt="Link do github" href="https://github.com/felipe-frade">
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub de Felipe Pereira" href="https://github.com/frade-op">
                 <div class="links">
-                    <img src="assets/icons/github.svg">
+                    <img src="assets/icons/github.svg" alt="">
                 </div>
             </a>
-            <a target="_blank" alt="Link de email" href="mailto:felipe.so.dev@gmail.com">
+            <a aria-label="Enviar e-mail para Felipe Pereira" href="mailto:felipe.so.dev@gmail.com">
                 <div class="links">
-                    <img src="assets/icons/envelope-solid.svg">
+                    <img src="assets/icons/envelope-solid.svg" alt="">
                 </div>
             </a>
-            <a target="_blank" alt="Link do instagram" href="https://www.instagram.com/so__felipe/">
+            <a target="_blank" rel="noopener noreferrer" aria-label="Instagram de Felipe Pereira" href="https://www.instagram.com/frade_op/">
                 <div class="links">
-                    <img src="assets/icons/instagram.svg">
+                    <img src="assets/icons/instagram.svg" alt="">
                 </div>
             </a>
         </div>

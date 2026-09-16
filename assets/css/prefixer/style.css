@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+button {
+    all: unset;
+}
+
 @font-face {
     font-family: duty;
     src: url('../fonts/Ikaros-Regular.otf');
@@ -437,7 +441,7 @@ div.links:hover {
     background: green;
 }
 div.links img {
-    height: 50px;
+    height: 30px;
     -webkit-filter: invert(1);
             filter: invert(1);
 }

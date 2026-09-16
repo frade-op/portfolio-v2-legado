@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Editor and local workspace files
+.vscode/
+*.code-workspace
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+
+# Local environment files
+.env
+.env.*
+!.env.example
