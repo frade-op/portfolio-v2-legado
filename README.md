@@ -1,31 +1,74 @@
-# Felipe Pereira | Portfólio pessoal antigo
+# Portfólio Pessoal — Felipe Frade (v2)
 
-Este é um portfólio pessoal antigo de Felipe Pereira, desenvolvido para apresentar experiência profissional, tecnologias e formas de contato usando HTML, CSS e JavaScript puros.
+> ⚠️ **Projeto legado.** Este é um portfólio pessoal antigo, criado como parte da minha evolução como desenvolvedor. O site não está mais publicado e não está em manutenção ativa. O repositório é mantido apenas como registro histórico do projeto.
 
-O site não está mais publicado. Este repositório é mantido como registro de um projeto anterior.
+## 📖 Sobre o projeto
 
-## Referências
+Site pessoal em formato de one-page interativa, desenvolvido para apresentar:
 
-- GitHub: [felipe-frade](https://github.com/frade-op)
-- LinkedIn: [Felipe Pereira](https://www.linkedin.com/in/frade-op/)
+- 💼 Experiência profissional;
+- 💻 Tecnologias e ferramentas utilizadas;
+- 💡 Informações pessoais e pontos fortes;
+- 🔗 Links para redes profissionais e contato.
 
-## Tecnologias
+O layout usa transições e elementos visuais criados com CSS e JavaScript para alternar entre as seções de apresentação, carreira e desenvolvimento de software.
 
-- HTML semântico e acessível
-- CSS responsivo com animações visuais
-- JavaScript sem dependências
+## 🛠️ Tecnologias utilizadas
 
-## Desenvolvimento local
+- HTML5;
+- CSS3, sem pré-processadores ou frameworks;
+- JavaScript puro (Vanilla JS);
+- Fontes e ícones armazenados localmente;
+- GitHub Pages, utilizado originalmente para a publicação.
 
-Como este é um site estático, basta clonar o repositório e abrir `index.html` no navegador. Para executar localmente, também é possível servir a pasta com qualquer servidor HTTP local.
+## 📁 Estrutura do projeto
 
-## Nome e descrição do repositório
+```
+├── index.html                 # Página principal
+├── CNAME                      # Domínio usado na publicação original
+└── assets/
+	├── css/
+	│   ├── style.css          # Estilos gerais
+	│   ├── menu.css           # Navegação e cabeçalho
+	│   ├── bg.css             # Fundos e elementos visuais
+	│   ├── original/          # Versões originais dos estilos
+	│   └── prefixer/          # Versões prefixadas dos estilos
+	├── fonts/                 # Fontes utilizadas pelo projeto
+	├── icons/                 # Ícones, favicons e imagens de tecnologias
+	└── js/
+		├── language.js        # Alternância entre português e inglês
+		├── main.js            # Elementos visuais da página inicial
+		├── second.js          # Tecnologias e tabela de experiência
+		├── script.js          # Navegação e comportamento geral
+		└── third.js           # Seção de carreira
+```
 
-Nome sugerido para o GitHub: `felipe-pereira-portfolio`.
+## ▶️ Como executar localmente
 
-Descrição sugerida: `Portfólio pessoal de Felipe Pereira, desenvolvedor de software.`
+Como é um site estático, basta abrir o arquivo `index.html` diretamente no navegador.
 
-O nome e a descrição do repositório são metadados da hospedagem e precisam ser atualizados nas configurações do GitHub; este README mantém a sugestão registrada sem alterar o remoto automaticamente.
+Caso prefira utilizar um servidor local, execute na raiz do projeto:
+
+```bash
+npx serve .
+```
+
+## 📌 Observações
+
+- Este projeto não possui build tools, gerenciador de dependências ou testes automatizados;
+- O site não está mais publicado;
+- O código reflete decisões técnicas e padrões da época em que o portfólio foi desenvolvido;
+- Não recomendo usar este projeto como referência de boas práticas atuais; ele é mantido por valor histórico e como registro da minha evolução profissional.
+
+## 🏷️ Nome e descrição sugeridos
+
+**Nome do repositório:** `portfolio-pessoal-v2-legado`
+
+**Descrição:** `Segundo portfólio pessoal de Felipe Frade, mantido como registro histórico da evolução como desenvolvedor.`
+
+## About
+
+Meu segundo portfólio pessoal, desenvolvido com HTML, CSS e JavaScript vanilla. Projeto legado mantido como registro da minha evolução como desenvolvedor — não está publicado nem em manutenção ativa.
 
 ## Licença
 
